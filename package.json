@@ -2,10 +2,10 @@
   "name": "yeloaicoder",
   "version": "1.0.0",
   "description": "AI Luau code generator server",
-  "main": "server/index.cjs",
+  "main": "server/index.js",
   "type": "module",
   "scripts": {
-    "start": "node server/index.cjs",
+    "start": "node server/index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "dependencies": {
