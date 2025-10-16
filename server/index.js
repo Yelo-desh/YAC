@@ -4,6 +4,7 @@ import dotenv from "dotenv";
 import OpenAI from "openai";
 
 dotenv.config();
+
 const app = express();
 const port = process.env.PORT || 3000;
 
@@ -28,6 +29,7 @@ app.post("/generate", async (req, res) => {
         }
       ],
     });
+
     const code = response.choices[0].message.content;
     res.json({ code });
   } catch (err) {
